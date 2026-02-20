@@ -315,7 +315,7 @@ footer {
     margin-top: 10px;
 }
 
-@media (max-width: 768px) {
+<!--@media (max-width: 768px) {
     .hero {
         height: auto;
         padding-top: 120px;
@@ -344,4 +344,4 @@ footer {
     .hero-image-card {
         max-width: 260px;
     }
-}
+}--!>
