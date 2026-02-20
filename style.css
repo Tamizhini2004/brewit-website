@@ -262,3 +262,36 @@ footer {
     font-size: 14px;
     margin-top: 10px;
 }
+@media (max-width: 768px) {
+.hero {
+    padding: 60px 20px;
+    min-height: auto;  
+  }
+.hero-container {
+    flex-direction: column;   
+    text-align: center;
+    gap: 25px;
+  }
+.hero-content {
+    max-width: 100%;
+  }
+.hero-title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+.hero-text {
+    font-size: 14px;
+  }
+.hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+.hero-image {
+    margin-top: 10px;
+  }
+.hero-image img {
+    width: 220px;  
+    height: auto;
+  }
+}
