@@ -315,33 +315,4 @@ footer {
     margin-top: 10px;
 }
 
-<!--@media (max-width: 768px) {
-    .hero {
-        height: auto;
-        padding-top: 120px;
-        padding-bottom: 60px;
-    }
 
-    .hero-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 25px;
-    }
-
-    .hero-content {
-        max-width: 100%;
-    }
-
-    .hero-title {
-        font-size: 32px;
-        line-height: 1.2;
-    }
-
-    .hero-text {
-        font-size: 14px;
-    }
-
-    .hero-image-card {
-        max-width: 260px;
-    }
-}--!>
