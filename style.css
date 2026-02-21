@@ -211,8 +211,7 @@ nav a:hover {
     margin-bottom: 30px;
 }
 .table-wrapper {
-    background: #0b0b0b;
-    overflow-x: auto;
+   overflow-x: auto;
 }
 #coffee-menu table {
     width: 80%;
