@@ -21,7 +21,9 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
 }
-
+body{
+    padding-top:70px;
+}
 .container {
     width: 90%;
     max-width: 1200px;
@@ -99,8 +101,8 @@ nav a:hover {
 }
 
 .hero {
-    height: 100vh;
-    padding-top: 90px;
+    min-height:calc(100vh-70px);
+    padding-top: 40px 0;
     display: flex;
     align-items: center;
     background: linear-gradient(135deg, #0B0705, #010000);
@@ -113,12 +115,12 @@ nav a:hover {
 
 .hero-subtitle {
     color: var(--coffee-accent);
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .hero-title {
-    font-size: 52px;
-    margin-bottom: 20px;
+    font-size: 42px;
+    margin-bottom: 16px;
 }
 
 .hero-title span {
@@ -126,7 +128,7 @@ nav a:hover {
 }
 
 .hero-text {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 
 .hero-container {
@@ -141,7 +143,7 @@ nav a:hover {
     padding: 18px;
     border-radius: 16px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
-    max-width: 460px;
+    max-width: 320px;
 }
 
 .hero-image-card img {
@@ -313,6 +315,43 @@ footer {
     color: var(--coffee-accent);
     font-size: 14px;
     margin-top: 10px;
+}
+@media (max-width: 768px) { 
+    header {
+        padding: 8px 0; 
+    }
+    body {
+        padding-top: 60px; 
+    } 
+    .hero {
+        min-height: auto; 
+        padding: 32px 0 40px; 
+    } 
+    .hero-container { 
+        flex-direction: column; 
+        text-align: center; 
+    } 
+    .hero-title { 
+        font-size: 32px; 
+    } 
+    .hero-image-card { 
+        max-width: 260px;
+    }
+    .products { 
+        padding: 60px 0; 
+    } 
+    #coffee-menu { 
+        padding: 60px 0; 
+    } 
+    footer {
+        padding: 60px 0; 
+    }
+    #coffee-menu table { 
+        width: 100%; 
+    } 
+    nav ul { 
+        gap: 16px; 
+    } 
 }
 
 
