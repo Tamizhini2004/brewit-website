@@ -203,7 +203,7 @@ nav a:hover {
 }
 #coffee-menu {
     padding: 70px 0;
-    background: #161515;
+    background:var(--coffee-dark);
 }
 #coffee-menu h2 {
     text-align: center;
