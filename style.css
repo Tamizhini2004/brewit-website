@@ -20,23 +20,24 @@ body {
     background-color: var(--coffee-cream);
     color: var(--text-dark);
     line-height: 1.6;
+    padding-top: 70px;
 }
-body{
-    padding-top:70px;
-}
+
 .container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
 }
 
+/* ================= HEADER ================= */
+
 header {
     background: #161515;
     position: fixed;
     width: 100%;
     top: 0;
-    padding: 10px 0;
     z-index: 1000;
+    padding: 10px 0;
 }
 
 .header-container {
@@ -71,6 +72,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
+    align-items: center;
 }
 
 nav a {
@@ -100,12 +102,21 @@ nav a:hover {
     color: var(--coffee-medium);
 }
 
+/* ================= HERO ================= */
+
 .hero {
-    min-height:calc(100vh-70px);
-    padding-top: 40px 0;
+    min-height: calc(100vh - 70px);
+    padding: 40px 0;
     display: flex;
     align-items: center;
     background: linear-gradient(135deg, #0B0705, #010000);
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .hero-content {
@@ -131,11 +142,8 @@ nav a:hover {
     margin-bottom: 24px;
 }
 
-.hero-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+.hero-buttons {
+    margin-bottom: 28px;
 }
 
 .hero-image-card {
@@ -151,6 +159,8 @@ nav a:hover {
     display: block;
     border-radius: 12px;
 }
+
+/* ================= PRODUCTS ================= */
 
 .products {
     padding: 100px 0;
@@ -210,23 +220,30 @@ nav a:hover {
     font-weight: bold;
 }
 
+/* ================= MENU TABLE ================= */
+
 #coffee-menu {
     padding: 80px 0;
     background: #161515;
-}
-
-#coffee-menu table {
-    width: 80%;
-    margin: 40px auto;
-    border-collapse: collapse;
-    background-color: var(--coffee-dark);
-    color: var(--text-light);
 }
 
 #coffee-menu h2 {
     text-align: center;
     color: var(--coffee-gold);
     margin-bottom: 30px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+#coffee-menu table {
+    width: 80%;
+    min-width: 600px;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: var(--coffee-dark);
+    color: var(--text-light);
 }
 
 #coffee-menu table,
@@ -237,17 +254,15 @@ nav a:hover {
 
 #coffee-menu th {
     background-color: var(--coffee-medium);
-    color: white;
     padding: 15px;
-    font-size: 16px;
 }
 
 #coffee-menu td {
     padding: 12px;
     text-align: center;
-    font-size: 15px;
-    color: var(--text-light);
 }
+
+/* ================= FOOTER ================= */
 
 footer {
     background: var(--coffee-dark);
@@ -263,11 +278,6 @@ footer {
     gap: 25px;
 }
 
-.footer-form h3 {
-    color: var(--coffee-gold);
-    margin-bottom: 15px;
-}
-
 .footer-form form {
     display: flex;
     flex-direction: column;
@@ -279,79 +289,79 @@ footer {
     padding: 12px;
     border-radius: 8px;
     border: none;
-    outline: none;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .footer-form button {
     padding: 12px;
     border-radius: 25px;
-    border: none;
     background: var(--coffee-gold);
-    color: var(--coffee-dark);
+    border: none;
     font-weight: 600;
-    cursor: pointer;
-}
-
-.footer-form button:hover {
-    background: var(--coffee-accent);
-}
-
-.footer-email {
-    color: var(--coffee-accent);
-    font-size: 15px;
-}
-
-.footer-email a {
-    color: var(--coffee-cream);
-    text-decoration: none;
-}
-
-.footer-email a:hover {
-    text-decoration: underline;
 }
 
 .copyright {
     color: var(--coffee-accent);
     font-size: 14px;
-    margin-top: 10px;
-}
-@media (max-width: 768px) { 
-    header {
-        padding: 8px 0; 
-    }
-    body {
-        padding-top: 60px; 
-    } 
-    .hero {
-        min-height: auto; 
-        padding: 32px 0 40px; 
-    } 
-    .hero-container { 
-        flex-direction: column; 
-        text-align: center; 
-    } 
-    .hero-title { 
-        font-size: 32px; 
-    } 
-    .hero-image-card { 
-        max-width: 260px;
-    }
-    .products { 
-        padding: 60px 0; 
-    } 
-    #coffee-menu { 
-        padding: 60px 0; 
-    } 
-    footer {
-        padding: 60px 0; 
-    }
-    #coffee-menu table { 
-        width: 100%; 
-    } 
-    nav ul { 
-        gap: 16px; 
-    } 
 }
 
+/* ================= MOBILE FIXES ================= */
+
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 60px;
+    }
+
+    header {
+        padding: 8px 0;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 6px 14px;
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 32px 0 40px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-image-card {
+        max-width: 260px;
+        margin-top: 24px;
+    }
+
+    .products,
+    #coffee-menu,
+    footer {
+        padding: 60px 0;
+    }
+
+    #coffee-menu table {
+        width: 100%;
+    }
+
+    #coffee-menu th,
+    #coffee-menu td {
+        font-size: 14px;
+        padding: 10px;
+        white-space: nowrap;
+    }
+}
 
