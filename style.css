@@ -239,72 +239,72 @@ nav a:hover {
     text-align: center;
 }
 
-footer {
-    background: var(--coffee-dark);
-    padding: 80px 0;
-    border-top: 4px solid var(--coffee-gold);
+#contact {
+  background: var(--coffee-dark);
+  padding: 80px 0;
+  border-top: 4px solid var(--coffee-gold);
 }
 
-.footer-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 25px;
+#contact .footer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
 }
 
-.footer-form h3 {
-    color: var(--coffee-gold);
-    margin-bottom: 15px;
+#contact .footer-form h3 {
+  color: var(--coffee-gold);
+  margin-bottom: 15px;
 }
 
-.footer-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 300px;
+#contact .footer-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
 }
 
-.footer-form input {
-    padding: 12px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    font-family: 'Montserrat', sans-serif;
+#contact .footer-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.footer-form button {
-    padding: 12px;
-    border-radius: 25px;
-    border: none;
-    background: var(--coffee-gold);
-    color: var(--coffee-dark);
-    font-weight: 600;
-    cursor: pointer;
+#contact .footer-form button {
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background: var(--coffee-gold);
+  color: var(--coffee-dark);
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.footer-form button:hover {
-    background: var(--coffee-accent);
+#contact .footer-form button:hover {
+  background: var(--coffee-accent);
 }
 
-.footer-email {
-    color: var(--coffee-accent);
-    font-size: 15px;
+#contact .footer-email {
+  color: var(--coffee-accent);
+  font-size: 15px;
 }
 
-.footer-email a {
-    color: var(--coffee-cream);
-    text-decoration: none;
+#contact .footer-email a {
+  color: var(--coffee-cream);
+  text-decoration: none;
 }
 
-.footer-email a:hover {
-    text-decoration: underline;
+#contact .footer-email a:hover {
+  text-decoration: underline;
 }
 
-.copyright {
-    color: var(--coffee-accent);
-    font-size: 14px;
-    margin-top: 10px;
+#contact .copyright {
+  color: var(--coffee-accent);
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
