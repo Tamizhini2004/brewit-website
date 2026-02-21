@@ -112,17 +112,14 @@ nav a:hover {
 }
 
 .hamburger span {
-    width: 25px;
+    width: 26px;
     height: 3px;
     background: var(--coffee-gold);
     border-radius: 4px;
 }
 
 .hero {
-    min-height: calc(100vh - 70px);
-    padding: 40px 0;
-    display: flex;
-    align-items: center;
+    padding: 60px 0;
     background: linear-gradient(135deg, #0B0705, #010000);
 }
 
@@ -134,18 +131,18 @@ nav a:hover {
 }
 
 .hero-content {
-    max-width: 700px;
+    max-width: 600px;
     color: var(--text-light);
 }
 
 .hero-subtitle {
     color: var(--coffee-accent);
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 .hero-title {
     font-size: 42px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .hero-title span {
@@ -153,19 +150,20 @@ nav a:hover {
 }
 
 .hero-text {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
+    color: #ddd;
 }
 
 .hero-buttons {
-    margin-bottom: 28px;
+    display: flex;
+    gap: 14px;
 }
 
 .hero-image-card {
-    background-color: #fff;
-    padding: 18px;
+    background: #fff;
+    padding: 14px;
     border-radius: 16px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
-    max-width: 320px;
+    max-width: 280px;
 }
 
 .hero-image-card img {
@@ -174,39 +172,44 @@ nav a:hover {
 }
 
 .products {
-    padding: 100px 0;
+    padding: 80px 0;
     background: #161515;
     border-top: 4px solid var(--coffee-gold);
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .section-title {
     color: var(--coffee-gold);
-    font-size: 36px;
+    font-size: 34px;
 }
 
 .section-desc {
-    color: var(--text-light);
+    color: var(--coffee-accent);
 }
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 26px;
 }
 
 .product-card {
     background: var(--coffee-dark);
-    border-radius: 12px;
+    border-radius: 14px;
     overflow: hidden;
 }
 
+.product-card h3,
+.product-card p {
+    color: var(--coffee-cream);
+}
+
 #coffee-menu {
-    padding: 80px 0;
+    padding: 70px 0;
     background: #161515;
 }
 
@@ -223,7 +226,7 @@ nav a:hover {
 #coffee-menu table {
     width: 80%;
     min-width: 600px;
-    margin: 40px auto;
+    margin: auto;
     border-collapse: collapse;
     background: var(--coffee-dark);
     color: var(--text-light);
@@ -238,7 +241,7 @@ nav a:hover {
 
 footer {
     background: var(--coffee-dark);
-    padding: 80px 0;
+    padding: 70px 0;
     border-top: 4px solid var(--coffee-gold);
 }
 
@@ -246,17 +249,42 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
+    text-align: center;
+}
+
+.footer-center h2 {
+    color: var(--coffee-gold);
+}
+
+.footer-center input,
+.footer-center button {
+    width: 90%;
+    max-width: 360px;
+}
+
+.footer-center input {
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+}
+
+.footer-center button {
+    padding: 14px;
+    border-radius: 30px;
+    border: none;
+    background: var(--coffee-gold);
+    font-weight: 600;
+}
+
+.footer-center p {
+    color: var(--coffee-accent);
 }
 
 @media (max-width: 768px) {
 
     body {
         padding-top: 60px;
-    }
-
-    header {
-        padding: 8px 0;
     }
 
     .hamburger {
@@ -274,8 +302,8 @@ footer {
 
     nav ul {
         flex-direction: column;
-        gap: 20px;
         padding: 20px 0;
+        gap: 18px;
     }
 
     #menu-toggle:checked ~ nav {
@@ -283,8 +311,7 @@ footer {
     }
 
     .hero {
-        min-height: auto;
-        padding: 32px 0 40px;
+        padding: 40px 0;
     }
 
     .hero-container {
@@ -293,27 +320,25 @@ footer {
     }
 
     .hero-title {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .hero-image-card {
-        max-width: 260px;
-        margin-top: 24px;
+        max-width: 220px;
+        margin-top: 20px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
     }
 
     .products,
     #coffee-menu,
     footer {
-        padding: 60px 0;
+        padding: 55px 0;
     }
 
     #coffee-menu table {
         width: 100%;
-    }
-
-    #coffee-menu th,
-    #coffee-menu td {
-        font-size: 14px;
-        white-space: nowrap;
     }
 }
